@@ -154,7 +154,7 @@
             </div>
             
             <div class="mt-3">
-                <img class="obj-contain secondary-cover" v-for="(item , key) in detail.imagesUrl" :src="item" alt="">
+                <img class="obj-contain secondary-cover" v-for="(item , key) in detail.imagesUrl" :key="item" :src="item" alt="">
             </div>
             `
         });
